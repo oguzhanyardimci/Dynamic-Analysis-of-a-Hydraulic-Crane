@@ -1,0 +1,463 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<SimscapeMultibodyImportXML version="2.0" xmlns="urn:mathworks:SimscapeMultibody:import" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<Created by="" on="12/14/18||01:26:58" using="Simscape Multibody Link Version 5.1" from="SolidWorks 24.2.0"/>
+<ModelUnits mass="kilogram" length="millimeter"/>
+<DataUnits mass="kilogram" length="meter"/>
+<RootAssembly name="Assem2" uid="Assem2" version="165">
+<AssemblyFile name="Assem2.SLDASM" type="SolidWorks Assembly"/>
+<InstanceTree>
+<Instance name="Boom-1" uid="Boom-1" entityUid="Boom*:*Varsayilan">
+<Transform>
+<Rotation>1 0 0 0 0.9994395832721058 0.033474160017533824 0 -0.033474160017533824 0.9994395832721058</Rotation>
+<Translation>-0.060242303564733139 1.1114824608158704 1.6798879166546536</Translation>
+</Transform>
+</Instance>
+<Instance name="mass-1" uid="mass-1" entityUid="mass*:*Varsayilan">
+<Transform>
+<Rotation>1 0 0 0 0.99999362438591211 0.0035708804974941581 0 -0.0035708804974941581 0.99999362438591211</Rotation>
+<Translation>-0.060242303564733174 0.45593089979275292 3.6613558780570838</Translation>
+</Transform>
+</Instance>
+<Instance name="BasePlate-1" uid="BasePlate-1" grounded="true" entityUid="BasePlate*:*Varsayilan">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>-0.060242303564733146 -0.83521237118732461 1.48</Translation>
+</Transform>
+</Instance>
+<Instance name="PistonAltmil-1" uid="PistonAltmil-1" entityUid="PistonAltmil*:*Varsayilan">
+<Transform>
+<Rotation>-1 0 0 0 -0.54941182189201809 0.83555170394494049 0 0.83555170394494049 0.54941182189201809</Rotation>
+<Translation>-0.060242303564733285 0.46269201675852945 2.2710956579822579</Translation>
+</Transform>
+</Instance>
+<Instance name="AltPim-1" uid="AltPim-1" entityUid="AltPim*:*Varsayilan">
+<Transform>
+<Rotation>0 0 1 0 1 0 -1 0 0</Rotation>
+<Translation>-0.16024230356473323 -0.36021237118732463 1.73</Translation>
+</Transform>
+</Instance>
+<Instance name="PistonUstMil-1" uid="PistonUstMil-1" entityUid="PistonUstMil*:*Varsayilan">
+<Transform>
+<Rotation>1 3.4694436870975407e-16 0 1.9061518443154585e-16 -0.54941182189201876 -0.83555170394494027 -2.8989005923551658e-16 0.83555170394494027 -0.54941182189201876</Rotation>
+<Translation>-0.060242303564733146 0.13875610068661881 2.0580936127646523</Translation>
+</Transform>
+</Instance>
+<Instance name="Ustpin-1" uid="Ustpin-1" entityUid="Ustpin*:*Varsayilan">
+<Transform>
+<Rotation>0 0 1 -0.91991348889955338 0.39212137526619445 0 -0.39212137526619445 -0.91991348889955338 0</Rotation>
+<Translation>-0.12024230356473312 0.94172128817777412 2.5860783736028572</Translation>
+</Transform>
+</Instance>
+<Instance name="Pin-1" uid="Pin-1" entityUid="Pin*:*Varsayilan">
+<Transform>
+<Rotation>1 0 0 0 -0.99356811763274699 -0.11323601734306948 0 0.11323601734306948 -0.99356811763274699</Rotation>
+<Translation>-0.16624230356473318 1.1047876288126752 1.48</Translation>
+</Transform>
+</Instance>
+<Instance name="Pin-2" uid="Pin-2" entityUid="Pin*:*Varsayilan">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>-0.16624230356473318 1.1777612976513576 3.6587782915331752</Translation>
+</Transform>
+</Instance>
+</InstanceTree>
+<Constraints>
+<Concentric name="Es Merkezli1">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>BasePlate-1</Uid>
+</InstancePath>
+<Position>1.8999999999999999 1.9399999999999999 0</Position>
+<Axis>-1 0 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Boom-1</Uid>
+</InstancePath>
+<Position>0.10400000000000009 0 -0.19999999999999996</Position>
+<Axis>-1 0 0</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="Çakisik1">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>BasePlate-1</Uid>
+</InstancePath>
+<Position>-0.099999999999999978 2 0.10000000000000009</Position>
+<Axis>-1 0 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Boom-1</Uid>
+</InstancePath>
+<Position>-0.099999999999999978 -0.060000000000000053 -0.099999999999999867</Position>
+<Axis>1 0 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Concentric name="Es Merkezli2">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Boom-1</Uid>
+</InstancePath>
+<Position>0.10400000000000009 0 -0.19999999999999996</Position>
+<Axis>-1 0 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Pin-1</Uid>
+</InstancePath>
+<Position>0.21199999999999999 0 0</Position>
+<Axis>-1 0 0</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="Çakisik2">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Boom-1</Uid>
+</InstancePath>
+<Position>0.10599999999999996 -0.060000000000000053 -0.099999999999999867</Position>
+<Axis>1 0 -1.7347234759768076e-16</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Pin-1</Uid>
+</InstancePath>
+<Position>0.21199999999999999 0 0</Position>
+<Axis>1 0 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Concentric name="Es Merkezli3">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>BasePlate-1</Uid>
+</InstancePath>
+<Position>-0.099999999999999978 0.47499999999999998 0.25</Position>
+<Axis>1 0 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>AltPim-1</Uid>
+</InstancePath>
+<Position>0 0 0.20000000000000001</Position>
+<Axis>0 0 -1</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="Çakisik3">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>BasePlate-1</Uid>
+</InstancePath>
+<Position>0.10000000000000002 2 0.099999999999999867</Position>
+<Axis>1 0 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>AltPim-1</Uid>
+</InstancePath>
+<Position>0 0 0.20000000000000001</Position>
+<Axis>0 0 -1</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Concentric name="Es Merkezli6">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>PistonAltmil-1</Uid>
+</InstancePath>
+<Position>-0.10499999999999998 -2.2204460492503131e-16 -0.98486351480186118</Position>
+<Axis>1 0 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>AltPim-1</Uid>
+</InstancePath>
+<Position>0 0 0.20000000000000001</Position>
+<Axis>0 0 -1</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Distance name="Uzaklik2">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>PistonAltmil-1</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>1 0 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>BasePlate-1</Uid>
+</InstancePath>
+<Position>-0.085999999999999993 0.3849999999999999 0.10000000000000009</Position>
+<Axis>1 0 0</Axis>
+</ConstraintGeometry>
+</Distance>
+<Concentric name="Es Merkezli7">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Boom-1</Uid>
+</InstancePath>
+<Position>-0.12000000000000002 -0.20000000000000018 0.90000000000000013</Position>
+<Axis>1 0 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Ustpin-1</Uid>
+</InstancePath>
+<Position>0 0 0.12</Position>
+<Axis>0 0 -1</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="Çakisik10">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Boom-1</Uid>
+</InstancePath>
+<Position>0.060000000000000019 -0.059999999999999942 2</Position>
+<Axis>1 0 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Ustpin-1</Uid>
+</InstancePath>
+<Position>0 0 0.12</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Concentric name="Es Merkezli10">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>PistonAltmil-1</Uid>
+</InstancePath>
+<Position>0 -4.4408920985006262e-16 -1.3500000000000003</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>PistonUstMil-1</Uid>
+</InstancePath>
+<Position>0 0 -0.88500000000000045</Position>
+<Axis>0 0 1.0000000000000002</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Concentric name="Es Merkezli11">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>PistonUstMil-1</Uid>
+</InstancePath>
+<Position>0.070000000000000007 4.4408920985006262e-16 -0.96100000000000052</Position>
+<Axis>-1 -3.4694469519536137e-16 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Ustpin-1</Uid>
+</InstancePath>
+<Position>0 0 0.12</Position>
+<Axis>0 0 -1</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Concentric name="Es Merkezli12">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Boom-1</Uid>
+</InstancePath>
+<Position>-0.10600000000000034 0 1.9800000000000002</Position>
+<Axis>1 0 1.7347234759768073e-16</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Pin-2</Uid>
+</InstancePath>
+<Position>0.21199999999999999 0 0</Position>
+<Axis>-1 0 0</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="Çakisik13">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Boom-1</Uid>
+</InstancePath>
+<Position>0.10599999999999996 -0.060000000000000053 1.8999999999999997</Position>
+<Axis>1 0 1.7347234759768076e-16</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Pin-2</Uid>
+</InstancePath>
+<Position>0.21199999999999999 0 0</Position>
+<Axis>1 0 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Concentric name="Es Merkezli13">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>mass-1</Uid>
+</InstancePath>
+<Position>-0.24341749999999993 0.72183499999999989 4.4408920985006262e-16</Position>
+<Axis>1 0 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Pin-2</Uid>
+</InstancePath>
+<Position>0.21199999999999999 0 0</Position>
+<Axis>-1 0 0</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="Çakisik14">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Boom-1</Uid>
+</InstancePath>
+<Position>0.099999999999999964 -0.060000000000000053 1.8999999999999997</Position>
+<Axis>-1 0 -1.7347234759768076e-16</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>mass-1</Uid>
+</InstancePath>
+<Position>0.10000000000000003 0.73683500000000002 0.050000000000000266</Position>
+<Axis>1 0 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+</Constraints>
+</RootAssembly>
+<Assemblies>
+</Assemblies>
+<Parts>
+<Part name="AltPim" uid="AltPim*:*Varsayilan" version="121">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="AltPim.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>1.1317237645052922</Mass>
+<CenterOfMass>0 0 0.10272428391977263</CenterOfMass>
+<Inertia>0.0040336216613408096 0.0040336216613408096 0.00012840524356569672 0 0 0</Inertia>
+</MassProperties>
+<GeometryFile name="AltPim_Varsayilan_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.52941176470588236" g="0.5490196078431373" b="0.5490196078431373" a="1"/>
+<Diffuse r="0.52941176470588236" g="0.5490196078431373" b="0.5490196078431373" a="1"/>
+<Specular r="0.37058823529411761" g="0.3843137254901961" b="0.3843137254901961" a="1"/>
+<Emissive r="0.11117647058823529" g="0.11529411764705882" b="0.11529411764705882" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="BasePlate" uid="BasePlate*:*Varsayilan" version="206">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="BasePlate.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>234.80181525755938</Mass>
+<CenterOfMass>2.291520405670083e-15 0.37878991038903892 0.24099265638747364</CenterOfMass>
+<Inertia>122.87888336052356 94.684276818848275 146.18689289561928 23.061820145930998 -4.5373180623945068e-13 4.8805078702141086e-13</Inertia>
+</MassProperties>
+<GeometryFile name="BasePlate_Varsayilan_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.52941176470588236" g="0.5490196078431373" b="0.5490196078431373" a="1"/>
+<Diffuse r="0.52941176470588236" g="0.5490196078431373" b="0.5490196078431373" a="1"/>
+<Specular r="0.37058823529411761" g="0.3843137254901961" b="0.3843137254901961" a="1"/>
+<Emissive r="0.11117647058823529" g="0.11529411764705882" b="0.11529411764705882" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="Boom" uid="Boom*:*Varsayilan" version="570">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="Boom.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>46.970683160340201</Mass>
+<CenterOfMass>0 -0.010444574172465276 0.90000450745439153</CenterOfMass>
+<Inertia>16.37639137765867 16.344284206013416 0.31791675523600965 -2.2113065707583518e-06 -3.8007201629290957e-15 0</Inertia>
+</MassProperties>
+<GeometryFile name="Boom_Varsayilan_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.52941176470588236" g="0.5490196078431373" b="0.5490196078431373" a="1"/>
+<Diffuse r="0.52941176470588236" g="0.5490196078431373" b="0.5490196078431373" a="1"/>
+<Specular r="0.37058823529411761" g="0.3843137254901961" b="0.3843137254901961" a="1"/>
+<Emissive r="0.11117647058823529" g="0.11529411764705882" b="0.11529411764705882" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="Pin" uid="Pin*:*Varsayilan" version="106">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="Pin.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.18701775403113902</Mass>
+<CenterOfMass>0.106 0 0</CenterOfMass>
+<Inertia>3.3663195725605043e-06 0.00070212698788423933 0.00070212698788423933 0 0 0</Inertia>
+</MassProperties>
+<GeometryFile name="Pin_Varsayilan_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.52941176470588236" g="0.5490196078431373" b="0.5490196078431373" a="1"/>
+<Diffuse r="0.52941176470588236" g="0.5490196078431373" b="0.5490196078431373" a="1"/>
+<Specular r="0.37058823529411761" g="0.3843137254901961" b="0.3843137254901961" a="1"/>
+<Emissive r="0.11117647058823529" g="0.11529411764705882" b="0.11529411764705882" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="PistonAltmil" uid="PistonAltmil*:*Varsayilan" version="196">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="PistonAltmil.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>131.50859282799806</Mass>
+<CenterOfMass>-1.8849935934696841e-09 -1.1507241224982326e-08 -0.49667747600607581</CenterOfMass>
+<Inertia>10.278459675510295 10.278257610355741 0.68784840618155563 -5.640028367852899e-07 -1.0372419012907256e-07 -2.0833432551885042e-08</Inertia>
+</MassProperties>
+<GeometryFile name="PistonAltmil_Varsayilan_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.52941176470588236" g="0.5490196078431373" b="0.5490196078431373" a="1"/>
+<Diffuse r="0.52941176470588236" g="0.5490196078431373" b="0.5490196078431373" a="1"/>
+<Specular r="0.37058823529411761" g="0.3843137254901961" b="0.3843137254901961" a="1"/>
+<Emissive r="0.11117647058823529" g="0.11529411764705882" b="0.11529411764705882" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="PistonUstMil" uid="PistonUstMil*:*Varsayilan" version="171">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="PistonUstMil.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>15.925800062582557</Mass>
+<CenterOfMass>0 0 -0.46866862102639506</CenterOfMass>
+<Inertia>1.178982592711151 1.179380277903437 0.034029401154210027 0 0 0</Inertia>
+</MassProperties>
+<GeometryFile name="PistonUstMil_Varsayilan_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.52941176470588236" g="0.5490196078431373" b="0.5490196078431373" a="1"/>
+<Diffuse r="0.52941176470588236" g="0.5490196078431373" b="0.5490196078431373" a="1"/>
+<Specular r="0.37058823529411761" g="0.3843137254901961" b="0.3843137254901961" a="1"/>
+<Emissive r="0.11117647058823529" g="0.11529411764705882" b="0.11529411764705882" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="Ustpin" uid="Ustpin*:*Varsayilan" version="130">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="Ustpin.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.10558138926478436</Mass>
+<CenterOfMass>0 0 0.059999999999999998</CenterOfMass>
+<Inertia>0.00012699062157516623 0.00012699062157516623 1.896500191173583e-06 0 0 0</Inertia>
+</MassProperties>
+<GeometryFile name="Ustpin_Varsayilan_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.52941176470588236" g="0.5490196078431373" b="0.5490196078431373" a="1"/>
+<Diffuse r="0.52941176470588236" g="0.5490196078431373" b="0.5490196078431373" a="1"/>
+<Specular r="0.37058823529411761" g="0.3843137254901961" b="0.3843137254901961" a="1"/>
+<Emissive r="0.11117647058823529" g="0.11529411764705882" b="0.11529411764705882" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="mass" uid="mass*:*Varsayilan" version="174">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="mass.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>914.02008812759698</Mass>
+<CenterOfMass>0 0.25009206922840366 0</CenterOfMass>
+<Inertia>37.845068087638005 35.507173434043217 37.894903852650252 4.5162218854642718e-15 3.065581642702763e-15 -1.4051529455476361e-15</Inertia>
+</MassProperties>
+<GeometryFile name="mass_Varsayilan_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.52941176470588236" g="0.5490196078431373" b="0.5490196078431373" a="1"/>
+<Diffuse r="0.52941176470588236" g="0.5490196078431373" b="0.5490196078431373" a="1"/>
+<Specular r="0.37058823529411761" g="0.3843137254901961" b="0.3843137254901961" a="1"/>
+<Emissive r="0.11117647058823529" g="0.11529411764705882" b="0.11529411764705882" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+</Parts>
+</SimscapeMultibodyImportXML>
